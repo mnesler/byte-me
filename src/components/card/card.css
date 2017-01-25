@@ -2,10 +2,13 @@
     margin: 2px;
     width: 130px;
     transition: .3s all;  /* rotate gradually instead of instantly */
+    float: left;
 }
 
-.card:hover {
+.card.hovered {
+    
     -webkit-transform: rotate(90deg);  /* to support Safari and Android browser */
     -ms-transform: rotate(90deg);      /* to support IE 9 */
     transform: rotate(90deg);
+    
 }
