@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
 
-import Deck from './Components/Deck';
-import Card from './Components/Card';
-import Field from './Components/Field';
+import Deck from './components/deck/deck';
+import Card from './components/card/card';
+import Field from './components/field/field';
 
 export default class App extends Component {
   constructor(props) {

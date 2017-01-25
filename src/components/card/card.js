@@ -1,5 +1,5 @@
 import React from 'react';
-
+import CardStyle from './card.css'
 export default class Card extends React.Component {
      constructor(props) {
     super(props);
@@ -8,6 +8,7 @@ export default class Card extends React.Component {
           backImg: '../img/back.jpg',
           frontImg: '..img/placeholder.jpg',
           faced: false,
+          flop: false
         };
         //this.handleClick = this.handleClick.bind(this);
         this.flip = this.flip.bind(this);
@@ -21,27 +22,14 @@ export default class Card extends React.Component {
         faced: this.props.card.faced,
       });
   }
-  handleClick = () => {
-    this.flip();
-  }
+  handleClick = () => {this.flip()}
+  handleRightClick = () => {}
+  handleMiddleClick = () => {}
+  flop = () => { this.state.flop ? this.setState({flop: false}) : this.setState({flop: true}) }
+  flip = () => { this.state.faced ? this.setState({faced: false}) : this.setState({faced: true}) }
 
-  flip() {
-    if(this.state.faced){
-      this.setState({
-        faced: false
-      });
-    } else {
-          this.setState({
-        faced: true
-      });
-    }
-
-  }
   render() {
-         var cardStyle = {
-            width: '130px',
-            margin: '2px'
-        }
+         var cardStyle = {}
     if(this.state.faced) {
     return (
       <span onClick={this.handleClick}>
@@ -53,7 +41,7 @@ export default class Card extends React.Component {
     );
     } else {
           return (
-      <span onClick={this.handleClick}>
+      <span class={'card'} onClick={this.handleClick}>
       {
         <img style={cardStyle} src={this.state.backImg} />
       }
