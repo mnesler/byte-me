@@ -1,0 +1,59 @@
+{
+    "name": "Neato Deck",
+    "id": 1,
+    "cards": [{
+            "name": "Card 0",
+            "id": 10,
+            "text": "some text, and some more",
+            "cost": 2
+        }, {
+            "name": "Card 1",
+            "id": 11,
+            "text": "some text, and some more",
+            "cost": 2
+        }, {
+            "name": "Card 2",
+            "id": 12,
+            "text": "some text, and some more",
+            "cost": 2
+        }
+        , {
+            "name": "Card 3",
+            "id": 13,
+            "text": "some text, and some more",
+            "cost": 2
+        }
+        , {
+            "name": "Card 4",
+            "id": 14,
+            "text": "some text, and some more",
+            "cost": 33
+        }
+        , {
+            "name": "Card 5",
+            "id": 15,
+            "text": "some text, and some more",
+            "cost": 2
+        }
+        , {
+            "name": "Card 6",
+            "id": 16,
+            "text": "some text, and some more",
+            "cost": 2
+        }
+        , {
+            "name": "Card 7",
+            "id": 17,
+            "text": "some text, and some more",
+            "cost": 2
+        }
+        , {
+            "name": "Card 8",
+            "id": 18,
+            "text": "some text, and some more",
+            "cost": 5
+        }
+
+    ]
+
+}
